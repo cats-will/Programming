@@ -1,14 +1,14 @@
 #include "array.h"
 
-Array::Array() {
-    this->size = 1;
-    arr = new int[size];
-    for(int i = 0; i < size; i++) {
-        arr[i] = 0;
-    }
-}
+// Array::Array() {
+//     this->size = 1;
+//     arr = new int[size];
+//     for(int i = 0; i < size; i++) {
+//         arr[i] = 0;
+//     }
+// }
 
-Array::Array(int n) {
+Array::Array(int n = 1) {
     this->size = n;
     arr = new int[size];
     for(int i = 0; i < size; i++) {
