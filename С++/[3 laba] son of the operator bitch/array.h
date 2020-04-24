@@ -7,7 +7,7 @@ class Array {
     int size;
     int* arr;
 public:
-    Array();
+    //Array();
     explicit Array(int n);
     ~Array();
     int array_len() const;
@@ -20,4 +20,4 @@ public:
 };
 Array operator+(Array &arr1, Array &arr2);
 
-#endif //PROGA_ARRAY_H
+#endif PROGA_ARRAY_H
