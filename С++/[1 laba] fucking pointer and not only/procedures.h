@@ -1,6 +1,3 @@
-//
-// Created by Catswill on 11.02.2020.
-//
 #include <complex>
 #ifndef UNTITLED1_PROCEDURES_H
 #define UNTITLED1_PROCEDURES_H
