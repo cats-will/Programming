@@ -1,6 +1,3 @@
-//
-// Created by Catswill on 10.02.2020.
-//
 #include "procedures.h"
 
 
