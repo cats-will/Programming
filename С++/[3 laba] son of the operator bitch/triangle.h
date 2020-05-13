@@ -29,4 +29,4 @@ public:
     double S();
     ~Triangle();
 };
-#endif //PROGA3_SOMETHING_H
+#endif 
