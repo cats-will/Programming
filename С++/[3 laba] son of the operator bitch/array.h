@@ -7,7 +7,6 @@ class Array {
     int size;
     int* arr;
 public:
-    //Array();
     explicit Array(int n);
     ~Array();
     int array_len() const;
