@@ -1,6 +1,4 @@
-#ifndef PROGA_ARRAY_H
-#define PROGA_ARRAY_H
-
+#pragma once
 #include <iostream>
 
 class Array {
@@ -19,4 +17,4 @@ public:
 };
 Array operator+(Array &arr1, Array &arr2);
 
-#endif PROGA_ARRAY_H
+
