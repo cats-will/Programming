@@ -28,15 +28,22 @@ CVector2D ETriangle::position() const {
     return centre;
 }
 void ETriangle::initFromDialog() {
-    cout << "      Enter X's coords: ";
+    cout << "      Enter A's coords: ";
     cin >> a.x;
     cin >> a.y;
-    cout << "      Enter Y's coords: ";
+    cout << "      Enter B's coords: ";
     cin >> b.x;
     cin >> b.y;
-    cout << "      Enter Z's coords: ";
+    cout << "      Enter C's coords: ";
     cin >> c.x;
     cin >> c.y;
+    double aLength = sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
+    double bLength = sqrt(pow(c.x - b.x, 2) + pow(c.y - b.y, 2));
+    double cLength = sqrt(pow(a.x - c.x, 2) + pow(a.y - c.y, 2));
+    if(!(aLength == bLength && bLength == cLength)) {
+        cout << "Треугольник не равносторонний\n";
+        return;
+    }
     cout << "      Enter weight: ";
     cin >> weight;
 }
