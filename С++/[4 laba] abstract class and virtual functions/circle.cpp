@@ -2,8 +2,6 @@
 
 const double pi = M_PI;
 
-
-
 Circle::Circle() {
     this->Circle::initFromDialog();
 }
