@@ -1,7 +1,6 @@
 #pragma once
 #include "figure.h"
 
-
 class Circle : public IFigure {
     CVector2D centre;
     double r;
