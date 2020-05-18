@@ -1,8 +1,5 @@
 #include "ETriangle.h"
 
-ETriangle::ETriangle() {
-    this->ETriangle::initFromDialog();
-}
 void ETriangle::draw() {
     cout << "Name: " << classname() <<'\n';
     cout << "Weight: " << mass() <<'\n';
@@ -28,24 +25,25 @@ CVector2D ETriangle::position() const {
     return centre;
 }
 void ETriangle::initFromDialog() {
-    cout << "      Enter A's coords: ";
+    cout << "Enter A's coords: ";
     cin >> a.x;
     cin >> a.y;
-    cout << "      Enter B's coords: ";
+    cout << "Enter B's coords: ";
     cin >> b.x;
     cin >> b.y;
-    cout << "      Enter C's coords: ";
+    cout << "Enter C's coords: ";
     cin >> c.x;
     cin >> c.y;
     double aLength = sqrt(pow(b.x - a.x, 2) + pow(b.y - a.y, 2));
     double bLength = sqrt(pow(c.x - b.x, 2) + pow(c.y - b.y, 2));
     double cLength = sqrt(pow(a.x - c.x, 2) + pow(a.y - c.y, 2));
     if(!(aLength == bLength && bLength == cLength)) {
-        cout << "Треугольник не равносторонний\n";
-        return;
+        cout << "Triangle is not equilateral\n";
+        exit(0);
     }
-    cout << "      Enter weight: ";
+    cout << "Enter weight: ";
     cin >> weight;
+    cout << '\n';
 }
 const char* ETriangle::classname() const {
     return name;
