@@ -33,6 +33,7 @@ public:
 };
 
 class IDialogInitiable {
+public:
     virtual void initFromDialog() = 0;
 };
 
@@ -43,27 +44,3 @@ public:
 };
 
 class IFigure : public IGeoFigure, public IPhysObject, public IPrintable, public IDialogInitiable, public IBaseCObject, public CVector2D {};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
