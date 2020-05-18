@@ -7,7 +7,7 @@ class Circle : public IFigure {
     double weight = 0;
     const char* name = "Circle";
 public:
-    Circle();
+    Circle() = default;
     void draw() override;
     double mass() const override;
     double square() override;
@@ -20,4 +20,3 @@ public:
     bool operator<(const IPhysObject& obj) const override;
     friend std::istream&operator>>(std::istream& istream, Circle& a);
 };
-
