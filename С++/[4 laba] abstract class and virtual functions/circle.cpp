@@ -2,9 +2,6 @@
 
 const double pi = M_PI;
 
-Circle::Circle() {
-    this->Circle::initFromDialog();
-}
 void Circle::draw() {
     cout << "Name: " << classname() << '\n';
     cout << "Weight: " << mass() << '\n';
@@ -35,6 +32,7 @@ void Circle::initFromDialog() {
     cin >> r;
     cout << "      Enter weight: ";
     cin >> weight;
+    cout << '\n';
 }
 const char* Circle::classname() const {
     return name;
@@ -48,4 +46,3 @@ bool Circle::operator<(const IPhysObject& obj) const {
 std::istream&operator>>(std::istream& istream, Circle& a) {
     return istream >> a.centre.x >> a.centre.y >> a.r >> a.weight;
 }
-
