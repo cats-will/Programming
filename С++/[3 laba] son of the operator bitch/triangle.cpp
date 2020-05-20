@@ -6,20 +6,17 @@ Triangle::Triangle(Point x, Point y, Point z) : x_(x), y_(y), z_(z) {}
 
 Triangle::Triangle(const Triangle& a) : x_(a.x()), y_(a.y()), z_(a.z()) {}
 
+Triangle::~Triangle() {}
+
 Point Triangle::x() const {
     return this->x_;
 }
-
 Point Triangle::y() const {
     return this->y_;
 }
-
 Point Triangle::z() const {
     return this->z_;
 }
-
-Triangle::~Triangle() {}
-
 bool Triangle::operator==(Triangle &other) {
     return S() == other.S();
 }

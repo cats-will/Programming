@@ -21,6 +21,7 @@ public:
     Triangle();
     Triangle(const Triangle& a);
     Triangle(Point x, Point y, Point z);
+   ~Triangle();
     Point x() const;
     Point y() const;
     Point z() const;
@@ -31,6 +32,5 @@ public:
     friend std::ostream&operator<<(std::ostream& cout, const Triangle &a);
     void MoveToVector(Vector & other);
     double S();
-    ~Triangle();
 };
 #endif 
