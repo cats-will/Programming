@@ -9,11 +9,9 @@ Triangle::Triangle(const Triangle& a) : x_(a.x()), y_(a.y()), z_(a.z()) {}
 Point Triangle::x() const {
     return this->x_;
 }
-
 Point Triangle::y() const {
     return this->y_;
 }
-
 Point Triangle::z() const {
     return this->z_;
 }
