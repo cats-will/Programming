@@ -19,7 +19,11 @@ class Triangle {
     Point z_;
 public:
     Triangle();
+    Triangle(const Triangle& a);
     Triangle(Point x, Point y, Point z);
+    Point x() const;
+    Point y() const;
+    Point z() const;
     bool operator==(Triangle & other);
     bool operator!=(Triangle & other);
     bool operator<(Triangle & other);

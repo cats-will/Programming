@@ -4,6 +4,20 @@ Triangle::Triangle() : x_{0,0}, y_{1,1}, z_{1,0} {}
 
 Triangle::Triangle(Point x, Point y, Point z) : x_(x), y_(y), z_(z) {}
 
+Triangle::Triangle(const Triangle& a) : x_(a.x()), y_(a.y()), z_(a.z()) {}
+
+Point Triangle::x() const {
+    return this->x_;
+}
+
+Point Triangle::y() const {
+    return this->y_;
+}
+
+Point Triangle::z() const {
+    return this->z_;
+}
+
 Triangle::~Triangle() {}
 
 bool Triangle::operator==(Triangle &other) {
