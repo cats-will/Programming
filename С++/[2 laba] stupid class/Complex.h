@@ -18,7 +18,3 @@ public:
     double im() const;
     double length() const;
 };
-
-
-
-

@@ -9,4 +9,3 @@ int main() {
     Complex y = a + c;
     std::cout << y;
 }
-
