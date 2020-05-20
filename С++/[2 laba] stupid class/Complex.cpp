@@ -5,9 +5,9 @@ Complex::Complex(const double re, const double im) : re_(re), im_(im) {}
 
 Complex::Complex() : re_(im_), im_(0) {} //default
 
-Complex::Complex(const Complex& a) : re_(a.re()), im_(a.im()) {}
+Complex::Complex(const Complex& a) : re_(a.re()), im_(a.im()) {} //copy
 
-Complex& Complex::operator=(const Complex& a) { //assignment
+Complex& Complex::operator=(const Complex& a) { 
     if(this == &a) {
         return *this;
     }
