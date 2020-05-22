@@ -4,24 +4,24 @@
 
 int main() {
     IFigure *a = new Circle();
-    std::vector<IFigure*> circles;
-    circles.push_back(a);
-    a->initFromDialog();
-    a->draw();
+    IFigure *b = new ETriangle;
+    std::vector<IFigure*> figures;
+    figures.push_back(a);
+    figures.push_back(b);
+
+    figures[0]->initFromDialog();
+    figures[0]->draw();
     std::cout << "Circle's P = " << a->perimeter() << '\n';
     std::cout << "Circle's S = " << a->square() << '\n' << std::endl;
 
-    IFigure *b = new ETriangle;
-    std::vector<IFigure*> etriangles;
-    etriangles.push_back(b);
-    b->initFromDialog();
-    b->draw();
+    figures[1]->initFromDialog();
+    figures[1]->draw();
     std::cout << "Etriangle's P = " << b->perimeter() << '\n';
     std::cout << "Etriangle's S = " << b->square() << '\n';
 
-    bool q = a == b;
+    bool q = (*figures[0]) == (*figures[1]);
     std::cout << "answer:" << q << ", test ==" << std::endl;
 
-    bool w = a < b;
-    std::cout << "answer:" << b << ", test <" << std::endl;
+    bool w = (*figures[0]) < (*figures[1]);
+    std::cout << "answer:" << w << ", test <" << std::endl;
 }
