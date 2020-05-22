@@ -23,5 +23,5 @@ int main() {
     std::cout << "answer:" << q << ", test ==" << std::endl;
 
     bool w = figures[0] < figures[1];
-    std::cout << "answer:" << b << ", test <" << std::endl;
+    std::cout << "answer:" << w << ", test <" << std::endl;
 }
