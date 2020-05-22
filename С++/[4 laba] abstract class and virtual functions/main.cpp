@@ -19,9 +19,9 @@ int main() {
     std::cout << "Etriangle's P = " << b->perimeter() << '\n';
     std::cout << "Etriangle's S = " << b->square() << '\n';
 
-    bool q = a == b;
+    bool q = figures[0] == figures[1];
     std::cout << "answer:" << q << ", test ==" << std::endl;
 
-    bool w = a < b;
+    bool w = figures[0] < figures[1];
     std::cout << "answer:" << b << ", test <" << std::endl;
 }
