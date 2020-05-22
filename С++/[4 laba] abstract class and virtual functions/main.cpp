@@ -9,13 +9,13 @@ int main() {
     figures.push_back(a);
     figures.push_back(b);
     
-    a->initFromDialog();
-    a->draw();
+    figures[0]->initFromDialog();
+    figures[0]->draw();
     std::cout << "Circle's P = " << a->perimeter() << '\n';
     std::cout << "Circle's S = " << a->square() << '\n' << std::endl;
 
-    b->initFromDialog();
-    b->draw();
+    figures[1]->initFromDialog();
+    figures[1]->draw();
     std::cout << "Etriangle's P = " << b->perimeter() << '\n';
     std::cout << "Etriangle's S = " << b->square() << '\n';
 
