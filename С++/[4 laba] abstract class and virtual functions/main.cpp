@@ -4,16 +4,16 @@
 
 int main() {
     IFigure *a = new Circle();
-    std::vector<IFigure*> circles;
-    circles.push_back(a);
+    IFigure *b = new ETriangle;
+    std::vector<IFigure*> figures;
+    figures.push_back(a);
+    figures.push_back(b);
+    
     a->initFromDialog();
     a->draw();
     std::cout << "Circle's P = " << a->perimeter() << '\n';
     std::cout << "Circle's S = " << a->square() << '\n' << std::endl;
 
-    IFigure *b = new ETriangle;
-    std::vector<IFigure*> etriangles;
-    etriangles.push_back(b);
     b->initFromDialog();
     b->draw();
     std::cout << "Etriangle's P = " << b->perimeter() << '\n';
