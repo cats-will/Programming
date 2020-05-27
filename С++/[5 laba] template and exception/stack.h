@@ -5,7 +5,7 @@
 template <int N, class T>
 class Stack {
     T stack[N];
-    int size{};
+
     int top = 0;
 public:
     int get_top() const;
@@ -22,19 +22,19 @@ int Stack <N, T>::get_top() const {
 
 template <int N, class T>
 int Stack <N, T>::get_size() const {
-    return size;
+    return N;
 }
 
 template < int N, class T>
 void Stack <N, T>::push(const T &value) {
-    if(top >= size)
+    if(top >= N)
         throw MyException("Stack is overflow",1);
     stack[top++] = value;
 }
 
 template <int N, class T>
 void Stack <N, T>::pop() {
-    if(N <= 0)
+    if(top <= 0)
         throw MyException("Nothing to delete", 2);
     stack[--top];
 }

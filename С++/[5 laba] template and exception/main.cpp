@@ -30,6 +30,6 @@ int main() {
         std::cout << "Stack's top: " << stack.get_top();
     }
     catch (MyException &ex) {
-        std::cout << "Message: " << ex.msg() << '\n' << "Error: " << ex.what() << ", code:" << ex.code();
+        std::cout << '\n' << "Error: " << ex.what() << '\n' << "Message: " << ex.msg() << ", code:" << ex.code();
     }
 }
