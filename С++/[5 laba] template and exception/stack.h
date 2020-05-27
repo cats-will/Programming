@@ -5,7 +5,6 @@
 template <int N, class T>
 class Stack {
     T stack[N];
-
     int top = 0;
 public:
     int get_top() const;
