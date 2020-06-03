@@ -22,24 +22,3 @@ int main() {
     std::sort(nums2.begin(), nums2.end());
     std::cout << catswill::is_sorted(nums2.begin(), nums2.end(), [](int a, int b){return a < b;}) << '\n';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
